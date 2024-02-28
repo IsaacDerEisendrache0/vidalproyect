@@ -1,38 +1,309 @@
 .App {
   text-align: center;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.letraq{
   color: white;
+  margin-top: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.letra{
+  background-color: lightgoldenrodyellow;
+  margin-top: -0%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.container{
+  text-align: center;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 175px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid lightblue;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f0f0f0; /* Color de fondo */
+}
+
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.card p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+
+/* Layout*/
+.containers {
+  margin-top: 52px; /* Ajusta el valor según sea necesario */
+}
+
+.navbar {
+  background-color: black;
+  padding: 10px;
+}
+
+.navbar-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-item {
+  margin-right: 20px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-link:hover {
+  background-color: #ccc;
+}
+
+
+
+
+
+
+
+
+
+/*card*/
+
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px); 
+}
+
+
+/*fondo*/
+
+.background-container {
+  background-image: url('https://i.pinimg.com/originals/db/f4/af/dbf4af88edfe3d1b13c517aa0a933305.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300vh;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/*botones*/
+
+
+
+.nav-link:hover {
+  color: red; 
+}
+
+
+/*home*/
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 200px;
+  text-align: center;
+}
+
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+
+
+/*carrusel*/
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #100721;
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+}
+
+.containers {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  gap: 10px;
+
+  > div {
+    flex: 0 0 120px;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 1px 5px 15px #1e0e3e;
+    position: relative;
+    overflow: hidden;
+
+    &:nth-of-type(1) {
+      background: url("https://image.api.playstation.com/vulcan/ap/rnd/202203/2921/MCJsCSWXe61ZaWcqMswOb2pv.png")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(2) {
+      background: url("https://i.ytimg.com/vi/4jkECUNbnRE/maxresdefault.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(3) {
+      background: url("https://images7.alphacoders.com/112/1126827.jpg")
+        no-repeat 68% / cover;
+    }
+    &:nth-of-type(4) {
+      background: url("https://e1.pxfuel.com/desktop-wallpaper/626/893/desktop-wallpaper-vegito-blue-vegito-super-saiyan-blue.jpg")
+        no-repeat 50% / cover;
+    }
+
+    .content {
+      font-size: 1.5rem;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      opacity: 0;
+      flex-direction: column;
+      height: 100%;
+      justify-content: flex-end;
+      background: rgb(2, 2, 46);
+      background: linear-gradient(
+        0deg,
+        rgba(2, 2, 46, 0.6755077030812324) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      transform: translatey(100%);
+      transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+      visibility: hidden;
+
+      span {
+        display: block;
+        margin-top: 5px;
+        font-size: 1.2rem;
+      }
+    }
+
+    &:hover {
+      flex: 0 0 250px;
+      box-shadow: 1px 3px 15px #7645d8;
+      transform: translatey(-30px);
+    }
+
+    &:hover .content {
+      opacity: 1;
+      transform: translatey(0%);
+      visibility: visible;
+    }
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+
+/*RGB*/
+.btn {
+  border: none; 
+  color: black; 
+  padding: 14px 28px; 
+  cursor: pointer; 
+  border-radius: 5px; 
+}
+
+.secondary {background-color: white; border: 2px solid #e7e7e7;} 
+.secondary:hover {background: #ddd; color: white;}
+
+
+#shadowBox {
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Black w/opacity/see-through */
+    border: 3px solid;
+}
+
+.rainbow {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 32px;
+    font-family: monospace;
+    letter-spacing: 5px;
+}
+.rainbow_text_animated {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 8s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
 }
