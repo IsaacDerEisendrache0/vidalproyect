@@ -54,3 +54,34 @@ const About = () =>{
 }
 
 export default About;
+
+
+// Estructura de la respuesta esperada de la API:
+/*
+  La API de Dragon Ball proporciona datos sobre personajes en el formato siguiente:
+  {
+    "items": [
+     {
+        "id": 1,
+        "name": "Goku",
+        "image": "url_de_la_imagen.jpg",
+        "race": "Saiyan",
+        "gender": "Male",
+        "ki": "High",
+        "description": "Saiyan warrior and the main protagonist of Dragon Ball.",
+        "showFullDescription": false
+      },
+      {
+        "id": 2,
+        "name": "Vegeta",
+        "image": "url_de_la_imagen.jpg",
+        "race": "Saiyan",
+        "gender": "Male",
+        "ki": "High",
+        "description": "Prince of the fallen Saiyan race and one of the main characters in Dragon Ball.",
+        "showFullDescription": false
+      },
+      // Otros personajes...
+    ]
+  }
+*/
